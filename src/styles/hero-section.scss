@@ -1,0 +1,86 @@
+#hero-section
+{
+    width: 100%;
+    // max-width: 100vw !important;
+
+    padding: 20px 0px;
+
+    background-color: #202930;
+
+
+    > .trending-stories
+    {
+        background-color: #2c333b;
+        border-radius: 12px;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+
+        padding: 25px;
+
+        > .ts-story_box
+        {
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            padding: 0 25px;
+
+
+            > .ts-title
+            {
+                font-size: 1.46rem;
+                font-weight: 700;
+
+                color: #fff;
+                padding-right: 30px;
+
+                white-space: pre-wrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                display: -webkit-box;
+                line-clamp: 3; 
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+
+            > .ts-avatar
+            {
+                width: 66px;
+                height: 66px;
+
+                overflow: clip;
+                flex-shrink: 0;
+
+                position: relative;
+
+                > img
+                {
+                    width: 100%;
+                    height: 100%;
+
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    object-fit: cover;
+                }
+            }
+        }
+
+        > div:not(:last-child)
+        {
+            border-right: 1px solid #4a5058;
+        }
+
+        > div:first-child
+        {
+            padding-left: 0;
+        }
+    }
+}
