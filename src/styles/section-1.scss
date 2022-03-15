@@ -2,9 +2,7 @@
 {
     width: 100%;
 
-    // margin: auto;
-
-    padding: 30px 0px;
+    padding: 30px 30px;
 }
 
 .card
@@ -26,6 +24,16 @@
 
         text-decoration: none;
 
+        @media only screen and (max-width: 1200px)
+        {
+            grid-column: 1 / span 8;
+        }
+
+        @media only screen and (max-width: 930px)
+        {
+            grid-column: 1 / span 12;
+        }
+
         > :nth-child(1)
         {
             width: 100%;
@@ -35,10 +43,21 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             text-decoration: none;
+
+            @media only screen and (max-width: 630px)
+            {   
+                grid-template-columns: 1fr;
+                grid-template-rows: 50% 50%;
+            }
             
             > div
             {
                 padding: 30px;
+
+                @media only screen and (max-width: 630px)
+                {   
+                    padding-top: 0px;
+                }
 
                 > h3
                 {
@@ -72,7 +91,8 @@
             > div 
             {
                 width: 100%;
-                height: inherit;
+                height: 100%;
+                
                 > img 
                 {
                     width: 100%;
@@ -167,6 +187,22 @@
 
         display: grid;
         grid-template-rows: 1fr 80px;
+
+        @media only screen and (max-width: 1200px)
+        {
+            grid-column: 9 / span 4;
+        }
+
+        @media only screen and (max-width: 930px)
+        {
+            grid-column: 1 / span 6;
+            grid-row: 5 / span 5;
+        }
+
+        @media only screen and (max-width: 610px)
+        {
+            grid-column: 1 / span 12;
+        }
 
         > img 
         {
@@ -297,6 +333,23 @@
         display: grid;
         grid-template-rows: 1fr 90px;
 
+        @media only screen and (max-width: 1200px)
+        {
+            grid-column: 1 / span 4;
+        }
+
+        @media only screen and (max-width: 930px)
+        {
+            grid-column: 7 / span 6;
+            grid-row: 5 / span 5;
+        }
+
+        @media only screen and (max-width: 610px)
+        {
+            grid-column: 1 / span 12;
+            grid-row: 10 / span 5;
+        }
+
         > .img-wrapper
         {
             width: 100%;
@@ -335,24 +388,92 @@
     {
         grid-column: 4 / span 3;
         grid-row: 5 / span 2;
+
+        @media only screen and (max-width: 1200px)
+        {
+            grid-column: 5 / span 4;
+        }
+
+        @media only screen and (max-width: 930px)
+        {
+            grid-column: 1 / span 6;
+            grid-row: 10 / span 2;
+        }
+
+        @media only screen and (max-width: 610px)
+        {
+            grid-column: 1 / span 12;
+            grid-row: 15 / span 3;
+        }
     }
 
     &:nth-child(5)
     {
         grid-column: 7 / span 3;
         grid-row: 5 / span 2;
+
+        @media only screen and (max-width: 1200px)
+        {
+            grid-column: 9 / span 4;
+        }
+
+        @media only screen and (max-width: 930px)
+        {
+            grid-column: 7 / span 6;
+            grid-row: 10 / span 2;
+        }
+
+        @media only screen and (max-width: 610px)
+        {
+            grid-column: 1 / span 12;
+            grid-row: 18 / span 3;
+        }
     }
 
     &:nth-child(6)
     {
         grid-column: 4 / span 3;
         grid-row: 7 / span 2;
+
+        @media only screen and (max-width: 1200px)
+        {
+            grid-column: 5 / span 4;
+        }
+
+        @media only screen and (max-width: 930px)
+        {
+            grid-column: 1 / span 6;
+            grid-row: 12 / span 2;
+        }
+
+        @media only screen and (max-width: 610px)
+        {
+            grid-column: 1 / span 12;
+            grid-row: 21 / span 3;
+        }
     }
 
     &:nth-child(7)
     {
         grid-column: 7 / span 3;
         grid-row: 7 / span 2;
+
+        @media only screen and (max-width: 1200px)
+        {
+            grid-column: 9 / span 4;
+        }
+
+        @media only screen and (max-width: 930px)
+        {
+            grid-column: 7 / span 6;
+            grid-row: 12 / span 2;
+        }
+
+        @media only screen and (max-width: 610px)
+        {
+            grid-column: 1 / span 12;
+            grid-row: 24 / span 3;
+        }
     }
 
 
@@ -365,6 +486,23 @@
 
         display: grid;
         grid-template-rows: 60px 1fr 50px;
+
+        @media only screen and (max-width: 1200px)
+        {
+            grid-column: 1 / span 12;
+            grid-row: 9 / span 3;
+        }
+
+        @media only screen and (max-width: 930px)
+        {
+            grid-row: 14 / span 2;
+        }
+
+        @media only screen and (max-width: 610px)
+        {
+            grid-column: 1 / span 12;
+            grid-row: 27 / span 8;
+        }
 
         > .s1-card8-header
         {
