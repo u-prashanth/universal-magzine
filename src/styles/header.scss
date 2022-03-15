@@ -5,6 +5,7 @@ header
     z-index: 100;
 
     background-color: #fff;
+
     > .brand-wrapper
     {
         width: 100%;
@@ -15,12 +16,30 @@ header
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            padding: 0px 30px;
+
+            @media only screen and (max-width: 576px)
+            {
+                padding: 0px 10px;
+            }
+
             > p
             {
                 font-size: 30px;
                 font-weight: 900;
 
                 text-transform: uppercase;
+
+                @media only screen and (max-width: 768px)
+                {
+                    font-size: 28px;
+                }
+
+                @media only screen and (max-width: 576px)
+                {
+                    font-size: 22px;
+                }
             }
 
             > div
@@ -30,6 +49,12 @@ header
                 align-items: center;
                 justify-content: center;
 
+                @media only screen and (max-width: 768px)
+                {
+                    flex-direction: column-reverse;
+                    align-items: flex-end;
+                }
+
                 > .bw-date
                 {
                     white-space: pre;
@@ -38,6 +63,18 @@ header
                     color: #202930;
 
                     margin-right: 30px;
+
+                    @media only screen and (max-width: 768px)
+                    {
+                        margin-right: 0px;
+                        // margin-top: 5px !important;
+                        font-size: 14px;
+                    }
+
+                    @media only screen and (max-width: 576px)
+                    {
+                        font-size: 12px;
+                    }
                 }
 
                 > .bw-weather
@@ -46,6 +83,16 @@ header
                     font-size: 16px;
                     font-weight: 400;
                     color: #202930;
+
+                    @media only screen and (max-width: 768px)
+                    {
+                        font-size: 14px;
+                    }
+
+                    @media only screen and (max-width: 576px)
+                    {
+                        font-size: 12px;
+                    }
                 }
             }
         }
@@ -68,7 +115,7 @@ header
                 align-items: center;
                 justify-content: space-between;
 
-                padding: 10px 0px;
+                padding: 10px 30px;
 
 
                 > li
