@@ -1,5 +1,3 @@
-import $ from 'jquery';
-
 $( document ).ready(function() {
     renderHeader();
 })
@@ -8,7 +6,7 @@ function renderHeader()
 {
     $('header').append('<div></div')
     $('header > div').addClass('brand-wrapper grid').append('<div></div>')
-    $('header > div > div').append('<p>Universal</p>')
+    $('header > div > div').append('<p><i class="lni lni-menu hamburger">   </i>Universal</p>')
 
     $('header > div > div').append('<div></div>')
     $('header > div > div > div').append('<p>Monday, January 1, 2018</p>').addClass('bw-date')
@@ -26,5 +24,14 @@ function renderHeader()
 
     categories.forEach(category => {
         $('.header-categories').append(`<li>${category}</li>`)
+        $('.hamburger-links > ul').append(`<li>${category}</li>`)
+    })
+
+    $('.hamburger').click(function() {
+        $('.hamburger-menu').removeClass('hide-hamburger')
+    })
+
+    $('.hamburger-close').click(function() {
+        $('.hamburger-menu').addClass('hide-hamburger')
     })
 }

@@ -28,6 +28,7 @@ header
             {
                 font-size: 30px;
                 font-weight: 900;
+                white-space: pre;
 
                 text-transform: uppercase;
 
@@ -103,6 +104,12 @@ header
         width: 100%;
         background-color: #202930;
 
+        @media only screen and (max-width: 860px)
+        {
+            display: none;
+            visibility: collapse;
+        }
+
         > nav
         {
             width: 100%;
@@ -129,6 +136,108 @@ header
 
                     white-space: pre;
                 }
+            }
+        }
+    }
+}
+
+
+.hide-hamburger
+{
+    display: none !important;
+    visibility: collapse !important;
+}
+
+.hamburger
+{
+    display: none;
+    visibility: collapse;
+
+    cursor: pointer;
+
+    @media only screen and (max-width: 860px)
+    {
+        display: inline-block;
+        visibility: visible;
+    }
+}
+
+.hamburger-close
+{
+    cursor: pointer;
+
+    font-size: 1.4rem;
+}
+
+.hamburger-menu
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+
+    width: 70vw;
+    height: 100%;
+
+    background-color: #202930;
+
+    @media only screen and (max-width: 860px)
+    {
+        display: block;
+        visibility: visible;
+    }
+
+    > .hamburger-header
+    {
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid #555;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        > p
+        {
+            font-size: 22px;
+            font-weight: 900;
+            color: #fff;
+            white-space: pre;
+
+            display: flex;
+            align-items: center;
+
+            text-transform: uppercase;
+        }
+    }
+
+    > .hamburger-links
+    {
+        width: 100%;
+
+        > ul
+        {
+            list-style: none;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            > * {
+                padding: 10px;
+            }
+
+            > li
+            {
+                font-size: 14px;
+                font-weight: 500;
+                color: #888;
+
+                text-transform: uppercase;
+                list-style: none;
+
+                white-space: pre;
             }
         }
     }

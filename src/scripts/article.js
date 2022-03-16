@@ -1,7 +1,8 @@
-import $ from 'jquery';
+// import $ from 'jquery';
 
 $( document ).ready(function() {
     renderHeader();
+    console.log('Hi')
 })
 
 function renderHeader()

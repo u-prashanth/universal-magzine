@@ -3,6 +3,16 @@
     width: 100%;
 
     padding: 30px 30px;
+
+    @media only screen and (max-width: 930px)
+    {
+        padding: 20px 20px;
+    }
+
+    @media only screen and (max-width: 610px)
+    {
+        padding: 10px 10px;
+    }
 }
 
 .card
@@ -54,10 +64,10 @@
             {
                 padding: 30px;
 
-                @media only screen and (max-width: 630px)
-                {   
-                    padding-top: 0px;
-                }
+                // @media only screen and (max-width: 630px)
+                // {   
+                //     padding-top: 0px;
+                // }
 
                 > h3
                 {
