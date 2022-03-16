@@ -9,7 +9,7 @@ function renderHeader()
 {
     $('header').append('<div></div')
     $('header > div').addClass('brand-wrapper grid').append('<div></div>')
-    $('header > div > div').append('<p>Universal</p>')
+    $('header > div > div').append('<p><i class="lni lni-menu hamburger">   </i>Universal</p>')
 
     $('header > div > div').append('<div></div>')
     $('header > div > div > div').append('<p>Monday, January 1, 2018</p>').addClass('bw-date')

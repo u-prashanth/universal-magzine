@@ -10,12 +10,74 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
         <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="styles/main.scss">
+        <link rel="stylesheet" type="text/css" href="styles/article.scss">
     </head>
 
     <body>
         <div class="container">
             <header></header>
+
+            <div class="hamburger-menu hide-hamburger">
+                <div class="hamburger-header">
+                    <p>Universal</p>
+                    <p><i class="lni lni-close hamburger-close"></i></p>
+                </div>
+
+                <div class="hamburger-links">
+                    <ul></ul>
+                </div>
+            </div>
+
+            <section class="article-title-section">
+
+                <div class="backdrop"></div>
+
+                <div class="grid">
+                    <h2>SPACEX'S APPROACH TO SPACE SUSTAINABILITY AND SAFETY</h2>
+                </div>
+            </section>
+
+            <article>
+                <p class="initial-para">
+                    SpaceX was founded to revolutionize space technology towards making life multiplanetary. SpaceX is the world’s leading provider of launch services and is proud to be the first private company to have delivered astronauts to and from the International Space Station (ISS), and the first and only company to complete an all-civilian crewed mission to orbit. As such, SpaceX is deeply committed to maintaining a safe orbital environment, protecting human spaceflight, and ensuring the environment is kept sustainable for future missions to Earth orbit and beyond.
+                </p>
+
+                <p>
+                    With space sustainability in mind, we have pushed the state-of-the-art in key technology areas like flying satellites at challenging low altitudes, the use of sustainable electric propulsion for maneuvering and active de-orbit, and employing inter-satellite optical communications to constantly maintain contact with satellites. SpaceX is striving to be the world’s most open and transparent satellite operator, and we encourage other operators to join us in sharing orbital data and keeping the public and governments updated with detailed information about operations and practices.
+                </p>
+
+                <p>
+                    SpaceX continues to innovate to accelerate space technologies, and we are currently providing much-needed internet connectivity to people all over the globe, including underserved and remote parts of the world, with our Starlink constellation. Below are our operating principles demonstrating our commitment to space sustainability and safety.
+                </p>
+
+                <h3>DESIGNING AND BUILDING SAFE, RELIABLE AND DEMISABLE SATELLITES</h3>
+
+                <p>
+                    SpaceX satellites are designed and built for high reliability and redundancy in both supply chain and satellite design to successfully carry out their five-year design life. Rigorous part and system-level screening and testing enable us to reliably build and launch satellites at very high rates. We have the capacity to build up to 45 satellites per week, and we have launched up to 240 satellites in a single month. This is an unprecedented rate of deployment for a complex space system — and reflects SpaceX’s commitment to increase broadband accessibility around the world with Starlink as soon as feasible.
+                </p>
+
+                <p>
+                    The reliability of the satellite network is currently higher than 99% following the deployment of over 2,000 satellites, where only 1% have failed after orbit raising. We de-orbit satellites that are at risk of becoming non-maneuverable to prevent dead satellites from accumulating in orbit. Although this comes at the cost of losing otherwise healthy satellites, we believe this proactive approach is the right thing for space sustainability and safety.
+                </p>
+
+                <p>
+                    Our satellites use multiple strategies to prevent debris generation in space: design for demise, controlled deorbit to low altitudes, low orbit insertion, low operating orbit, on-board collision avoidance system, reducing the chance small debris will damage the satellite with a low profile satellite chassis and using Whipple shields to protect the key components, reducing risk of explosion with extensive battery pack protection, and failure modes that do not create secondary debris.
+                </p>
+
+                <p>
+                    SpaceX satellites are propulsively deorbited within weeks of their end-of-mission-life. We reserve enough propellant to deorbit from our operational altitude, and it takes roughly 4 weeks to deorbit. Once the satellites reach an appropriate altitude, we coordinate with the 18th Space Control Squadron. Once coordinated, we initiate a high drag mode, causing the satellite’s velocity to reduce sufficiently that the satellite deorbits. The satellites deorbit quickly from this altitude, depending on atmospheric density. SpaceX is the only commercial operator to have developed expertise in flying in a controlled way in this low altitude, high drag environment, which is incredibly difficult and required a significant investment in specialized satellite engineering. SpaceX made these investments so that we can maintain controlled flight as long as possible prior to deorbit, providing us with the ability to perform any necessary maneuvers to further reduce collision risk.
+                </p>
+
+                <p>
+                    When a satellite’s altitude decays, it encounters a constantly increasing atmospheric density. Initially, these molecules impact the satellite, but as the air density increases, a high-pressure shock wave forms in front of the spacecraft. As the satellite slows down and descends into the atmosphere, its orbital energy is transferred into the air, heating it to a plasma. The hot plasma sheath envelops the satellite, causing intense heating. Starlink satellites are designed to demise as they reenter the Earth’s atmosphere, meaning they pose no risk to people or property on the ground. Design for demise required the investment of significant engineering resources and often required adding cost and even mass to our satellites, such as our decision to use aluminum rather than composite overwrap pressure vessels for the fuel tank for our propulsion system. SpaceX has safely deorbited over 200 satellites utilizing this approach. By building reliable, debris minimizing satellites, planning for active deorbit and designing for full demisability, we ensure we’re keeping space sustainable and safe.
+                </p>
+
+                <h3>EXTREMELY LOW ORBIT INSERTION</h3>
+
+                <p>
+                    In addition to SpaceX designing and building very reliable satellites, we further mitigate risks by deploying the satellites into extremely low orbits relative to industry standards. We deploy our satellites into low altitudes (<350km) and use our state-of-the-art electric propulsion thruster to boost the satellites to the operational altitude of approximately 550 km to start their mission. We leverage SpaceX’s technical advancements to maintain controlled flight at these low altitudes. By deploying the satellites into such low altitudes, in the rare case where any SpaceX satellite does not pass initial system checkouts, it is quickly and actively deorbited using its thruster or passively by atmospheric drag. This approach is not without complexity or other challenges. This was best evidenced by the recent February 3rd Starlink launch, after which increased drag from a geomagnetic storm resulted in the premature deorbit of 38 satellites. Despite such challenges, SpaceX firmly believes that a low insertion altitude is key for ensuring responsible space operations.
+                </p>
+            </article>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
