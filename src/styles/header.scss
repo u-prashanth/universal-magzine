@@ -6,6 +6,11 @@ header
 
     background-color: #fff;
 
+    @media only screen and (max-width: 860px)
+    {
+        border-bottom: 1px solid #f4f4f4;
+    }
+
     > .brand-wrapper
     {
         width: 100%;
