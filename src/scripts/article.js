@@ -27,5 +27,14 @@ function renderHeader()
 
     categories.forEach(category => {
         $('.header-categories').append(`<li>${category}</li>`)
+        $('.hamburger-links > ul').append(`<li>${category}</li>`)
+    })
+
+    $('.hamburger').click(function() {
+        $('.hamburger-menu').removeClass('hide-hamburger')
+    })
+
+    $('.hamburger-close').click(function() {
+        $('.hamburger-menu').addClass('hide-hamburger')
     })
 }
